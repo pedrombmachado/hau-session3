@@ -39,7 +39,7 @@ https://github.com/pedrombmachado/hau-session3
 ```
 
 and fork the repository.
-
+![](./figures/fig1.png)
 **Figure 1:** Forking a repository.
 
 ### Step 3: Copy your repository URL
@@ -47,10 +47,11 @@ and fork the repository.
 Go to your account repository, for example:
 
 ```text
-N123456/comp40731_lab1
+user2/hau-session3
 ```
 
 Click the **Code** button and copy the repository URL.
+![](./figures/fig2.png)
 
 **Figure 2:** How to copy the repository URL.
 
@@ -63,7 +64,7 @@ http://localhost:8081/lab
 ```
 
 Open a terminal in JupyterLab.
-
+![](./figures/fig3.png)
 **Figure 3:** Open a terminal in JupyterLab.
 
 ### Step 5: Clone the repository
@@ -71,16 +72,12 @@ Open a terminal in JupyterLab.
 In the JupyterLab terminal, enter:
 
 ```bash
-git clone https://olympus.ntu.ac.uk/YOUR-STUDENT-NUMBER/comp40731_lab1
+git clone https://github.com/USER/hau-session3
 ```
 
-Replace `YOUR-STUDENT-NUMBER` with your student number.
+Replace `USER` with your GitHub user name.
 
-When prompted:
-
-- enter your student ID in the **Username** field;
-- enter your NTU password in the **Password** field.
-
+![](./figures/fig4.png)
 **Figure 4:** Cloning the repository.
 
 ---
@@ -89,17 +86,17 @@ When prompted:
 
 ### Step 6: Open and run the notebook
 
-Open the `comp40731_lab1` folder.
+Open the `hau-session3` folder.
 
 Then open:
 
 ```text
-Lab1.ipynb
+session_3.ipynb
 ```
 
 Restart the kernel and run all cells.
-
-**Figure 5:** Opening the `comp40731_lab1` folder and `Lab1.ipynb`, restarting the kernel and running all cells.
+![](./figures/fig5.png)
+**Figure 5:** Opening the `hau-session3` folder and `session_3.ipynb`, restarting the kernel and running all cells.
 
 ---
 
@@ -246,42 +243,18 @@ Write a comparison section answering the following questions:
 
 ---
 
-## Task 6: Commit and Push Your Source Code
+## Task 6: Download the changed ipynb file and upload it to your GitHub
+Right click on `session_3.ipynb` and select `Download`
+![](./figures/fig6.png)
+**Figure 6:** Download `session_3.ipynb` to your local machine.
 
-Open a terminal and navigate to the folder `comp40731_lab1`.
+Upload the `session_3.ipynb` to `https://github.com/USER/hau-session3`where USER is your GitHub User name.
 
-### JupyterLab terminal
+![](./figures/fig7.png)
+**Figure 7:** Upload `session_3.ipynb` to GitHub from your Local machine.
 
-```bash
-cd /opt/data/comp40731_lab1
-```
-
-Add all the changes and commit them.
-
-### JupyterLab terminal
-
-```bash
-git config --global user.name "Student Name"
-git config --global user.email "student@ntu.ac.uk"
-
-git add *
-git commit -m "update"
-```
-
-Push the changes to Olympus.
-
-### JupyterLab terminal
-
-```bash
-git push
-```
-
----
-
-## Stop the Container
-
-### PowerShell / Mac / Linux terminal
-
+## Task 7: Stop the container
+In the Powershell/terminal
 ```bash
 docker stop comp40731_container
 ```
